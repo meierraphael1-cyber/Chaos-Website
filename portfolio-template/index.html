@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Your Name | Developer Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<header>
+  <div>
+    <h1>Hi, I'm Your Name</h1>
+    <p>Your profession or niche goes here</p>
+    <button onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">
+      View My Work
+    </button>
+  </div>
+</header>
+
+<section>
+  <h2>What I Do</h2>
+  <p class="subtitle">Short description of your skills and services</p>
+
+  <div class="skills">
+    <div class="skill">Skill One</div>
+    <div class="skill">Skill Two</div>
+    <div class="skill">Skill Three</div>
+    <div class="skill">Skill Four</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Featured Projects</h2>
+  <p class="subtitle">Click a project to view details</p>
+  <div class="projects" id="projectList"></div>
+</section>
+
+<div id="projectModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">×</span>
+    <h3 id="modalTitle"></h3>
+    <img id="modalImage" alt="" />
+    <p id="modalDescription"></p>
+    <p id="modalFeatures"></p>
+  </div>
+</div>
+
+<section>
+  <h2>Hire Me</h2>
+  <div class="contact-box">
+    <p>📧 Email: your@email.com</p>
+    <p>⚡ Available for Freelance</p>
+  </div>
+</section>
+
+<footer>© 2025 • Portfolio Template</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
